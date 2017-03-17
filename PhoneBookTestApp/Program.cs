@@ -32,20 +32,28 @@ namespace PhoneBookTestApp
                 person.name = "John Smith";
                 person.phoneNumber = "(248) 123-4567";
                 person.address = "1234 Sand Hill Dr, Royal Oak, MI";
+                phonebook.addPerson(person);
+                Console.Write(phonebook);
+               
 
-            
+                Person person1 = new Person();
+                person1.name = "Cynthia Smith ";
+                person1.phoneNumber = "(824) 128-8758, 875";
+                person1.address = "875 Main St, Ann Arbor, MI";
+
+                phonebook.addPerson(person1);
 
                 string name = person.name;
-                phonebook.addPerson(person);
-                phonebook.findPerson(name);
-                Console.WriteLine("record added");
+               
+               phonebook.findPerson(name);
+                //Console.WriteLine("record added");
                 // Console.ReadLine();
             }
             catch (Exception)
             {
                throw;
             }
-            finally
+            //finally
             {
                 DatabaseUtil.CleanUp();
             }

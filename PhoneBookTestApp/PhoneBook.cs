@@ -38,7 +38,7 @@ namespace PhoneBookTestApp
             using (SQLiteConnection con = new SQLiteConnection(connectionString))
             {
                 SQLiteCommand cmd = new SQLiteCommand();
-                cmd.CommandText = "SELECT * FROM PHONEBOOK WHERE name = @NAME";
+                cmd.CommandText = "SELECT * FROM PHONEBOOK WHERE name ='Cynthia Smith '";
                 cmd.Connection = con;
                 con.Open();
                 SQLiteDataReader reader = cmd.ExecuteReader();
@@ -49,9 +49,9 @@ namespace PhoneBookTestApp
                     string address = reader.GetString(2);
 
                 }
-                return person;
+               
             }
-
+            return person;
 
         }
     }
