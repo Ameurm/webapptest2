@@ -16,7 +16,7 @@ namespace PhoneBookTestApp
             try
             {
               
-                DatabaseUtil.initializeDatabase();
+              // DatabaseUtil.initializeDatabase();
                 /* TODO: create person objects and put them in the PhoneBook and database
                 * John Smith, (248) 123-4567, 1234 Sand Hill Dr, Royal Oak, MI
                 * Cynthia Smith, (824) 128-8758, 875 Main St, Ann Arbor, MI
@@ -32,9 +32,14 @@ namespace PhoneBookTestApp
                 person.name = "John Smith";
                 person.phoneNumber = "(248) 123-4567";
                 person.address = "1234 Sand Hill Dr, Royal Oak, MI";
-                string fname = 
+
+                //person.name = "Cynthia Smith";
+                //person.phoneNumber = "(824) 128-8758";
+                //person.address = "875 Main St, Ann Arbor, MI";
+
+                string name = person.name;
                 phonebook.addPerson(person);
-                phonebook.findPerson(person.name.First,person.name.Last);
+                phonebook.findPerson(name);
                 // Console.WriteLine("record added");
                 // Console.ReadLine();
             }
