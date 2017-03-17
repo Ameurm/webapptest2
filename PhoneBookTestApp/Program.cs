@@ -33,14 +33,12 @@ namespace PhoneBookTestApp
                 person.phoneNumber = "(248) 123-4567";
                 person.address = "1234 Sand Hill Dr, Royal Oak, MI";
 
-                //person.name = "Cynthia Smith";
-                //person.phoneNumber = "(824) 128-8758";
-                //person.address = "875 Main St, Ann Arbor, MI";
+            
 
                 string name = person.name;
                 phonebook.addPerson(person);
                 phonebook.findPerson(name);
-                // Console.WriteLine("record added");
+                Console.WriteLine("record added");
                 // Console.ReadLine();
             }
             catch (Exception)

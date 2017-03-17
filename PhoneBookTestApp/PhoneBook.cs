@@ -25,10 +25,7 @@ namespace PhoneBookTestApp
                 con.Open();
                 cmd.ExecuteNonQuery();
             }
-                
-            //person.name = newPerson.name;
-            //person.phoneNumber = newPerson.phoneNumber;
-            //person.address = newPerson.address;
+            
         }
 
         public Person findPerson(string name)
